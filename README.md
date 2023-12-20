@@ -5,7 +5,7 @@ BackEnd made in python (Django). Database is held on sqlLite. FrontEnd made in H
 I used pdfkit and wkthmltopdf for pdf creating.
 The provided profiles CV data is fictional.
 To run the website:
-download zip, unpack it and run command python manage.py, while being in project directory, you need to have installed pdfkit and wkhtmltopdf on your device, so the server can work properly
+download zip, unpack it and run command python manage.py runserver, while being in project directory, you need to have installed pdfkit and wkhtmltopdf on your device, so the server can work properly
 
 # Screenshots
 ## Index Page/ Form Acceptance Page:
