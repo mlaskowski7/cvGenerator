@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %} Data Submission | CV Generator{% endblock %}
+
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="form-item">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Joe Smith">
+    </div>
+    <div class="form-item">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="joe.smith@gmail.com">
+    </div>
+    <div class="form-item">
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" placeholder="+48 123 456 789">
+    </div>
+    <div class="form-item">
+        <label for="summary">Summary</label>
+        <textarea type="text" name="summary" id="summary" placeholder="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor eius non fugit minus unde impedit ducimus. Nesciunt autem architecto, fuga voluptate voluptates commodi quas culpa excepturi quam, porro et quidem."></textarea>
+    </div>
+    <div class="form-item">
+        <label for="university">University</label>
+        <input type="text" name="university" id="university" placeholder="Stanford University">
+    </div>
+    <div class="form-item">
+        <label for="degree">Degree</label>
+        <input type="text" name="degree" id="degree" placeholder="Bachelor's">
+    </div>
+    <div class="form-item">
+        <label for="high_school">High School</label>
+        <input type="text" name="high_school" id="high_school" placeholder="West Ashley High School ">
+    </div>
+    <div class="form-item">
+        <label for="previous_work">Work Experience</label>
+        <textarea type="text" name="previous_work" id="previous_work" placeholder="Microsoft - Software Engineer(Java), Google - Python Developer"></textarea>
+    </div>
+    <div class="form-item">
+        <label for="skills">Skills</label>
+        <textarea type="text" name="skills" id="skills" placeholder="Python programming, Java programming, JavaScript programming, UX/UI design, video editing"></textarea>
+    </div>
+
+    <button type="submit" class="submit-form-btn">Submit</button>
+</form>
+{% endblock %}
+

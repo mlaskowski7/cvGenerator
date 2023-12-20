@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Pacifico&display=swap');
+
+body{
+    font-family: Inconsolata, sans-serif;
+    background: linear-gradient(to right, #41295a, #2f0743);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: Pacifico, sans-serif;
+    margin: 30px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container{
+    color: black;
+    background-color: whitesmoke;
+    width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.submit-form-btn{
+    background-color: #41295a;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.submit-form-btn:hover{
+    filter: brightness(110%);
+}
+
+.submit-form-btn:focus{
+    outline: none;
+}
+
+.submit-form-btn:active{
+    transform: scale(0.96);
+}
+
+
