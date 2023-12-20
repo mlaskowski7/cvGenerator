@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} Profiles list | CV Generator{% endblock %}
+
+{% block content %}
+<h2>Profiles List</h2>
+{% for profile in profiles %}
+<div class="profile">
+    <span>{{profile.name}}</span>
+    <a href="../cv/{{profile.id}}" class="download"><i class="fa-solid fa-file-arrow-down" style="color: #000000;"></i></a>
+</div>
+{% endfor %}    
+<button class="profiles-btn"><a href="../">Create New Profile</a></button>
+{% endblock %}

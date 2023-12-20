@@ -36,3 +36,7 @@ def cvView(request,id):
     response['Content-Disposition'] = 'attachment'
     filename = "cv.pdf"
     return response
+
+def listView(request):
+    profiles = Profile.objects.all()
+    return render(request,'list.html',{'profiles':profiles})

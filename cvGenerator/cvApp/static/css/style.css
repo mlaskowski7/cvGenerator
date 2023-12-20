@@ -63,4 +63,43 @@ input, textarea{
     transform: scale(0.96);
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.download:hover{
+    font-size: 22px;
+}
+
+.profiles-btn{
+    background-color: white;
+    border: 1px solid black !important;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.profiles-btn:hover{
+    filter: brightness(90%);
+}
+
+.profiles-btn:focus{
+    outline: none;
+}
+
+.profiles-btn:active{
+    transform: scale(0.96);
+}
+
+
+.profile{
+    font-size: 20px;
+}
+
 
